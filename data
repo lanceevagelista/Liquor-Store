@@ -1,0 +1,368 @@
+const data = {
+  products_b: [
+    {
+      id: '1',
+      name: 'Ultimate Shots Pack',
+      price: 3699,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Triple_J_Special_1L_Bottles_1024x1024.png?v=1591902285',
+    },
+    {
+      id: '2',
+      name: 'Triple J Special',
+      price: 3999,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/UltimateShotsPack_1024x1024.png?v=1591902291',
+    },
+    {
+      id: '3',
+      name: 'Johnnie Walker Deluxe',
+      price: 6499,
+      image: 'https://cdn.shopify.com/s/files/1/0423/6967/9515/products/MicrosoftTeams-image_1349_500x.png?v=1632810609',
+    },
+  ],
+
+    products_w: [
+    {
+      id: '1w',
+      name: 'Jim Beam White 750ml',
+      price: 549,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/JimBeamWhite_1024x1024.png?v=1618577895',
+    },
+    {
+      id: '2w',
+      name: 'J.W. Red Label 700ml',
+      price: 599,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/JW_Red_Label_700ml_1024x1024.png?v=1591901837',
+    },
+    {
+      id: '3w',
+      name: 'J.W. Red Label 1L',
+      price: 799,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/JW_Red_Label_1L_1024x1024.png?v=1569202009',
+    },
+    {
+      id: '4w',
+      name: 'J.W. Black Label 700ml',
+      price: 1099,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Johnnie_Walker_Black_Label_700ml_1024x1024.png?v=1569201809',
+    },
+    {
+      id: '5w',
+      name: "Jack Daniel's 700ml",
+      price: 1099,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Jd700ml_1024x1024.png?v=1591901784',
+    },
+  ],
+
+  products_w2: [
+    {
+      id: '6w',
+      name: "J.D. T. Honey 700ml",
+      price: 1099,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/JDHoney_1024x1024.png?v=1585905364',
+    },
+    {
+      id: '7w',
+      name: 'J.W. Black Label 1L',
+      price: 1199,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/jwblacklabel1l_1_1024x1024.png?v=1590569693',
+    },
+    {
+      id: '8w',
+      name: 'Chivas Regal 12yo 700ml',
+      price: 1199,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/ChivasRegal12700ml_1024x1024.png?v=1598612136',
+    },
+    {
+      id: '9w',
+      name: 'Jameson Irish Whiskey 1L',
+      price: 1399,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Jameson1L_1024x1024.png?v=1614919650',
+    },
+    {
+      id: '10w',
+      name: "Jack Daniel's 1L",
+      price: 1649,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/jack_daniel_s_1l_1_1024x1024.png?v=1590569700',
+    },
+  ],
+
+  products_w3: [
+    {
+      id: '11w',
+      name: "J.W. Double Black 700ml",
+      price: 1649,
+      image: 'https://cdn.shopify.com/s/files/1/0423/6967/9515/products/WEB-johnnie-walker-double-black_x192@2x.png?v=1622192133',
+    },
+    {
+      id: '12w',
+      name: 'Chivas Regal 12yo 1L',
+      price: 1649,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Chivas12yo1L_1024x1024.png?v=1598612162',
+    },
+    {
+      id: '13w',
+      name: 'J.W. Gold Reserve 750ml',
+      price: 1699,
+      image: 'https://cdn.shopify.com/s/files/1/0423/6967/9515/products/WEB-johnnie-walker-gold_500x.png?v=1622192219',
+    },
+    {
+      id: '14w',
+      name: 'J.W. Double Black 1L',
+      price: 1899,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/JOHNNIE_WALKER_DOUBLE_BLACK_1L_1024x1024.png?v=1569089668',
+    },
+    {
+      id: '15w',
+      name: "Chivas Regal 18yo 700ml",
+      price: 2949,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Chivas18yo_1024x1024.png?v=1598612190',
+    },
+  ],
+
+  products_w4: [
+    {
+      id: '16w',
+      name: "Dalmore 12yo 700ml",
+      price: 4299,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/dalmore-12yo_1024x1024.png?v=1593686584',
+    },
+    {
+      id: '17w',
+      name: 'Dalmore 15yo 700ml',
+      price: 6599,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/dalmore-15yo-2_1024x1024.png?v=1593686622',
+    },
+    {
+      id: '18w',
+      name: 'J.W. Blue Label 750ml',
+      price: 7999,
+      image: 'https://cdn.shopify.com/s/files/1/0423/6967/9515/products/MicrosoftTeams-image_232_500x.png?v=1617282177',
+    },
+  ],
+
+  products_t: [
+    {
+      id: '1t',
+      name: 'El Hombre White 700ml',
+      price: 249,
+      image: 'https://cdn.shopify.com/s/files/1/0423/6967/9515/products/WEB-el-hombre-white-tequila_500x.png?v=1622107299',
+    },
+    {
+      id: '2t',
+      name: 'Mojitos Silver 750ml',
+      price: 249,
+      image: 'https://cdn.shopify.com/s/files/1/0423/6967/9515/products/WEB-mojitos-silver_500x.png?v=1621330033',
+    },
+    {
+      id: '3t',
+      name: 'El Hombre Gold 700ml',
+      price: 349,
+      image: 'https://cdn.shopify.com/s/files/1/0423/6967/9515/products/WEB-el-hombre-gold-tequila_500x.png?v=1622107277',
+    },
+    {
+      id: '4t',
+      name: 'Mojitos Gold 750ml',
+      price: 349,
+      image: 'https://cdn.shopify.com/s/files/1/0423/6967/9515/products/WEB-mojitos-gold_500x.png?v=1622696996',
+    },
+    {
+      id: '5t',
+      name: "Jose Cuervo 375ml",
+      price: 699,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/JoseCuervo375ml_1024x1024.png?v=1619720319',
+    },
+  ],
+
+  products_t2: [
+    {
+      id: '6t',
+      name: 'Jose Cuervo Silver 700ml',
+      price: 849,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Jose_Cuervo_Especial_Silver_700ml_1024x1024.png?v=1570122747',
+    },
+    {
+      id: '7t',
+      name: 'Jose Cuervo Gold 700ml',
+      price: 849,
+      image: 'http://cdn.shopify.com/s/files/1/0423/6967/9515/products/WEB-jose-cuervo-especial-gold.png?v=1622193266',
+    },
+    {
+      id: '8t',
+      name: 'Jose Cuervo Gold 1L',
+      price: 1099,
+      image: 'http://cdn.shopify.com/s/files/1/0423/6967/9515/products/WEB-jose-cuervo-especial-gold.png?v=1622193266',
+    },
+    {
+      id: '9t',
+      name: 'Patron Reposado 750ml',
+      price: 3199,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/PAtronReposado750ml_1024x1024.png?v=1593468081',
+    },
+    {
+      id: '10t',
+      name: 'Patron Añejo 750ml',
+      price: 3449,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/PatronAnejo750ml_1024x1024.png?v=1593468114',
+    },
+  ],
+
+  products_v: [
+    {
+      id: '1v',
+      name: 'Smirnoff Red 700ml',
+      price: 599,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Smirnoff_Red_Vodka_1024x1024.png?v=1570122730',
+    },
+    {
+      id: '2v',
+      name: 'Absolut Blue 700ml',
+      price: 749,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Absolutblue700ml_1024x1024.png?v=1599120661',
+    },
+    {
+      id: '3v',
+      name: 'Absolut Blue 1L',
+      price: 899,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Absolutblue1Lnew_1024x1024.png?v=1599120702',
+    },
+    {
+      id: '4v',
+      name: 'Absolut Ruby Red 750ml',
+      price: 899,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/AbsolutRubyRed700ml_1024x1024.png?v=1599120679',
+    },
+    {
+      id: '5v',
+      name: "Absolut Apeach 700ml",
+      price: 949,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/AbsolutApeach700ml_1024x1024.png?v=1616061551',
+    },
+  ],
+
+  products_v2: [
+    {
+      id: '6v',
+      name: 'Absolut Citron 700ml',
+      price: 949,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Absolut_Citron_700ml_1024x1024.png?v=1569159660',
+    },
+    {
+      id: '7v',
+      name: 'Absolut Kurant 700ml',
+      price: 949,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/absolut_mandrin_700ml_a3e1d4b0-5276-401f-808e-533a0999e36a_1024x1024.png?v=1569248630',
+    },
+    {
+      id: '8v',
+      name: 'Absolut Mandrin 700ml',
+      price: 949,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/AbsolutMandrin700mlnew_1024x1024.png?v=1599120657',
+    },
+    {
+      id: '9v',
+      name: '42 Below Vodka 750ml',
+      price: 999,
+      image: 'https://cdn.shopify.com/s/files/1/0423/6967/9515/products/WEB-42-below-pure-vodka_500x.png?v=1622686589',
+    },
+    {
+      id: '10v',
+      name: "Grey Goose Vodka 750ml",
+      price: 1949,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/GreyGoose750ml_1024x1024.png?v=1614602844',
+    },
+  ],
+
+  products_be: [
+    {
+      id: '1be',
+      name: 'Smirnoff Mule 330ml',
+      price: 49,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/SmirnoffMuleBottle_1024x1024.png?v=1600767267',
+    },
+    {
+      id: '2be',
+      name: 'Brew Kettle Beer 330ml',
+      price: 69,
+      image: 'https://cdn.shopify.com/s/files/1/0494/4071/9012/products/Brew-Kettle-330mL-New-Label-Bottle_800x.png?v=1625128967',
+    },
+    {
+      id: '3be',
+      name: 'Heineken 330ml',
+      price: 79,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Heineken_330ml_1024x1024.png?v=1569208126',
+    },
+    {
+      id: '4be',
+      name: 'Budweiser 330ml',
+      price: 79,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Budweiser_330ml_Bttl_1_1024x1024.png?v=1626162284',
+    },
+    {
+      id: '5be',
+      name: "Sapporo 330ml",
+      price: 99,
+      image: 'https://media.danmurphys.com.au/dmo/product/709123-1.png',
+    },
+  ],
+
+  products_be2: [
+    {
+      id: '6be',
+      name: 'Corona 330ml',
+      price: 119,
+      image: 'http://assets.stickpng.com/images/585e5e47cb11b227491c33ee.png',
+    },
+    {
+      id: '7be',
+      name: 'Tiger Black 500ml (4 Cans)',
+      price: 279,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/tiger-black-500ml-bundle-of-4-cans_1024x1024.png?v=1591902267',
+    },
+    {
+      id: '8be',
+      name: 'Heineken 330ml (4 Cans)',
+      price: 319,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/heineken-330ml-bundle-of-4-cans_1024x1024.png?v=1590580513',
+    },
+    {
+      id: '9be',
+      name: 'San Mig Light 330ml 24s',
+      price: 1349,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/SanMigLightBeer330mLCanBundleof24_2_7bb46e1c-f080-4872-919c-b9b69515f51d_1024x1024.png?v=1608042381',
+    },
+    {
+      id: '10be',
+      name: "Red Horse Beer 330ml 24s",
+      price: 1349,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/RedHorseBeer330mLCanBundleof24_2_1024x1024.png?v=1602490407',
+    },
+  ],
+
+  products_be3: [
+    {
+      id: '11be',
+      name: 'San Mig Pilse 330ml 24s',
+      price: 1349,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/SanMiguelPalePilsenBeer330mLCanBundleof24_2_1024x1024.png?v=1602490435',
+    },
+    {
+      id: '12be',
+      name: 'San Mig Apple 330ml 24s',
+      price: 1349,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/SanMiguelFlavoredBeer-Apple330mLCanBundleof24_2_1024x1024.png?v=1602490454',
+    },
+    {
+      id: '13be',
+      name: 'Heineken 5L Draught Keg',
+      price: 1399,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/heineken-keg-2020_1024x1024.png?v=1590527186',
+    },
+    {
+      id: '14be',
+      name: 'Heineken 500ml 24s',
+      price: 2599,
+      image: 'https://cdn.shopify.com/s/files/1/2141/9909/products/Heineken_Case_1024x1024.png?v=1573994970',
+    },
+  ],
+};
+export default data;
