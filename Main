@@ -1,0 +1,86 @@
+import React from 'react';
+import Product from './Product';
+
+export default function Main(props) {
+  const { products_b, onAdd, products_w, products_w2, products_w3, products_w4, products_t, products_t2, products_v, products_v2, products_be, products_be2, products_be3} = props;
+  return (
+    <main className="block col-2">
+      <h2>Party Bundles</h2>
+      <div className="row">
+        {products_b.map((product) => (
+          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+        ))}
+      </div>
+
+      <h2>Whiskey</h2>
+      <div className="row">
+        {products_w.map((product) => (
+          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+        ))}
+      </div>
+
+      <div className="row">
+        {products_w2.map((product) => (
+          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+        ))}
+      </div>
+
+      <div className="row">
+        {products_w3.map((product) => (
+          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+        ))}
+      </div>
+
+      <div className="row">
+        {products_w4.map((product) => (
+          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+        ))}
+      </div>
+
+      <h2>Tequila</h2>
+      <div className="row">
+        {products_t.map((product) => (
+          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+        ))}
+      </div>
+
+      <div className="row">
+        {products_t2.map((product) => (
+          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+        ))}
+      </div>
+
+      <h2>Vodka</h2>
+      <div className="row">
+        {products_v.map((product) => (
+          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+        ))}
+      </div>
+
+      <div className="row">
+        {products_v2.map((product) => (
+          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+        ))}
+      </div>
+
+      <h2>Beer</h2>
+      <div className="row">
+        {products_be.map((product) => (
+          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+        ))}
+      </div>
+
+      <div className="row">
+        {products_be2.map((product) => (
+          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+        ))}
+      </div>
+
+      <div className="row">
+        {products_be3.map((product) => (
+          <Product key={product.id} product={product} onAdd={onAdd}></Product>
+        ))}
+      </div>
+    </main>
+  );
+}
